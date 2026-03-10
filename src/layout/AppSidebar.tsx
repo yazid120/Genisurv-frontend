@@ -6,6 +6,7 @@ import {
   BoxCubeIcon,
   CalenderIcon,
   ChevronDownIcon,
+  DollarLineIcon,
   GridIcon,
   HorizontaLDots,
   ListIcon,
@@ -53,12 +54,23 @@ const navItems: NavItem[] = [
     subItems: [{ name: "Basic Tables", path: "/basic-tables", pro: false }],
   },
   {
+    name: "Caisse",
+    icon: <DollarLineIcon />,
+    subItems: [
+      { name: "Ma Caisse", path: "/caisse", pro: false },
+      { name: "Encaissements", path: "/encaissements", pro: false },
+      { name: "Décaissements", path: "/decaissements", pro: false },
+    ],
+  },
+  {
     name: "Administration",
     icon: <LockIcon />,
     subItems: [
       { name: "Utilisateurs", path: "/admin/users", pro: false },
       { name: "Rôles", path: "/admin/roles", pro: false },
       { name: "Wilayas", path: "/admin/wilayas", pro: false },
+      { name: "Caisses", path: "/admin/caisses", pro: false },
+      { name: "Alimentations", path: "/admin/alimentations", pro: false },
     ],
   },
   {

@@ -21,6 +21,11 @@ import Home from "./pages/Dashboard/Home";
 import UsersPage from "./pages/Admin/UsersPage";
 import RolesPage from "./pages/Admin/RolesPage";
 import WilayasPage from "./pages/Admin/WilayasPage";
+import CaissesPage from "./pages/Admin/CaissesPage";
+import AlimentationsPage from "./pages/Admin/AlimentationsPage";
+import MaCaissePage from "./pages/Caisse/MaCaissePage";
+import EncaissementsPage from "./pages/Caisse/EncaissementsPage";
+import DecaissementsPage from "./pages/Caisse/DecaissementsPage";
 import { AuthProvider } from "./context/AuthContext";
 import ProtectedRoute from "./components/auth/ProtectedRoute";
 import GuestRoute from "./components/auth/GuestRoute";
@@ -64,6 +69,13 @@ export default function App() {
                 <Route path="/admin/users" element={<UsersPage />} />
                 <Route path="/admin/roles" element={<RolesPage />} />
                 <Route path="/admin/wilayas" element={<WilayasPage />} />
+                <Route path="/admin/caisses" element={<CaissesPage />} />
+                <Route path="/admin/alimentations" element={<AlimentationsPage />} />
+
+                {/* Caisse */}
+                <Route path="/caisse" element={<MaCaissePage />} />
+                <Route path="/encaissements" element={<EncaissementsPage />} />
+                <Route path="/decaissements" element={<DecaissementsPage />} />
               </Route>
             </Route>
 

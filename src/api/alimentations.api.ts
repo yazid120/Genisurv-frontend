@@ -18,3 +18,7 @@ export const updateAlimentation = async (
   const res = await api.put(`/admin/alimentation/${id}`, payload);
   return res.data.alimentation;
 };
+
+export const deleteAlimentation = async (id: number) => {
+  return api.delete(`/admin/alimentation/${id}`);
+};

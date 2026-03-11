@@ -1,6 +1,9 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router";
 import SignIn from "./pages/AuthPages/SignIn";
 import SignUp from "./pages/AuthPages/SignUp";
+import EmailVerification from "./pages/EmailVerification";
+import VerifyEmail from "./pages/VerifyEmail";
+import ForgotPassword from "./pages/ForgotPassword";
 import NotFound from "./pages/OtherPage/NotFound";
 import UserProfiles from "./pages/UserProfiles";
 import Videos from "./pages/UiElements/Videos";
@@ -43,6 +46,9 @@ export default function App() {
                 <Route index path="/" element={<Home />} />
 
                 {/* Others Page */}
+                <Route path="/emailverification" element={<EmailVerification />} />
+                <Route path="/forgotpassword" element={<ForgotPassword />} />
+                <Route path="/verify-email/:token" element={<VerifyEmail />} />
                 <Route path="/profile" element={<UserProfiles />} />
                 <Route path="/calendar" element={<Calendar />} />
                 <Route path="/blank" element={<Blank />} />
